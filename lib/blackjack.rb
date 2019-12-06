@@ -11,10 +11,6 @@ def display_card_total(card_total)
 end
 
 
-##########
-# rounds #
-##########
-
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -57,17 +53,6 @@ def hit?(card_total)
     card_total += deal_card
   end
   card_total
-  
-  ## Alternative solution - this solution calls hit? recursively if given an invalid command
-  # if user_input == "h"
-  #   card_total += deal_card
-  # elsif user_input == "s"
-  #   card_total
-  # else
-  #   invalid_command
-  #   hit?(card_total)
-  # end
-  
 end
 
 def invalid_command
@@ -83,6 +68,6 @@ end
 
 
 def runner
-
+  welcome
 end
     
