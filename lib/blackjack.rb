@@ -15,7 +15,6 @@ def display_card_total (num)
 end
 
 def prompt_user
-  
   puts "Type 'h' to hit or 's' to stay"
 end
 
@@ -65,19 +64,6 @@ end
 
 
 def runner
-  
-  
-  welcome
-  x = initial_round
-  
-  until x >= 21
-    x = hit?(x)
-    display_card_total(x)
-    
-  end 
-  
-  end_game(x)
-    
 
 end
     
